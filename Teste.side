@@ -1,0 +1,83 @@
+{
+  "id": "9486bb5b-ca41-4a5b-ad8e-6983e882db92",
+  "version": "2.0",
+  "name": "Teste",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "71d7b65e-3275-405a-9adc-b776c9eee511",
+    "name": "Untitled",
+    "commands": [{
+      "id": "bfd07b99-ce79-411c-81df-4bf91d1f7537",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d61d31d-e646-44a8-9e71-419e316357bc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "d18f407d-8606-404e-aa69-62b4a2697caa",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "siles é lindo"
+    }, {
+      "id": "655925f5-a581-4bef-b1d1-81b4a866a6dc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a26f292f-cdc6-49aa-b154-efbf0afe90b1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Tg7LZd",
+      "targets": [
+        ["css=.Tg7LZd", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94b871e0-7e71-49d4-b430-e6ab64cb7ba6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7e2904ff-0f96-48bc-b965-adbdf513de13",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71d7b65e-3275-405a-9adc-b776c9eee511"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
